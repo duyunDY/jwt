@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-type" content="text/html; charset=utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0">
+	<meta name="format-detection" content="telephone=no">
+	<title></title>
+	<link rel="stylesheet" href="css/weui.min.css">
+	<link rel="stylesheet" type="text/css" href="css/example.css" />
+	<script src="js/jquery-3.2.1.js" type="text/javascript" charset="utf-8"></script>
+
+	<style>
+		html,
+		body {
+			height: 100%;
+		}
+	</style>
+</head>
+<body>
+
+
+	<script type="text/javascript" src="js/weui.min.js"></script>
+	<script src="js/common/api.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/common/commonUtil.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+      getUser();
+	function getUser(){
+		var params =  '{"openid":"8654654654","nickname":"45454","icon":"asdfas5d4fas4df56132d13fas2d13"}';
+		cpAPI.getUsersIndex('',function(data){
+			log.v(data);
+			if(data.code==100000) {
+				alert(9989)
+			}         
+		}); 
+	}
+
+		
+	</script>
+</body>
+
+</html>
